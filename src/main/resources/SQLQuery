@@ -1,0 +1,5 @@
+insert into mydb.users (id, firstname, lastname, password, username) VALUES (1,'admin','admin', '$2y$10$k03n4Lcjl.WqrfLjSlG44OzcotrpBK8DuacFFSBtvIg.8Eq7oCoea','admin');
+insert into mydb.roles(id, name) VALUES (1,'ROLE_ADMIN');
+insert into mydb.roles(id, name) VALUES (2,'ROLE_USER');
+insert into mydb.users_roles(user_id, role_id) VALUES (1,1);
+insert into mydb.users_roles(user_id, role_id) VALUES (1,2);
